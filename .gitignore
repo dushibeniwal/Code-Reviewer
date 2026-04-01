@@ -1,0 +1,20 @@
+# Node and dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables (SECURITY BLOCK)
+.env
+server/.env
+client/.env
+
+# MacOS specific
+.DS_Store
+
+# Build output
+dist/
+client/dist/
+
+# IDE specific files
+.vscode/
+.idea/
