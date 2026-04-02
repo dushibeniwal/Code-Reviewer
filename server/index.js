@@ -11,6 +11,10 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+console.log("URI:", process.env.MONGODB_URI);
+
+
+
 // Main Code Review Route
 app.use('/api/review', reviewRoutes);
 
