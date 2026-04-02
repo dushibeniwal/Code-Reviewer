@@ -21,8 +21,8 @@ function App() {
     setResults(null);
 
     try {
-      // Dynamic Cloud Hooking: Uses VITE_API_URL if deployed, otherwise fallback to local 5001
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+      // Dynamic Cloud Hooking: Uses VITE_API_URL if deployed, otherwise fallback to the Live URL
+      const API_URL = import.meta.env.VITE_API_URL || 'https://code-reviewer-g5i5.onrender.com';
       
       const response = await fetch(`${API_URL}/api/review`, {
         method: 'POST',
